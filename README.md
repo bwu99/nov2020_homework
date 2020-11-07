@@ -3,23 +3,23 @@ This is for Guzman Energy November 2020 Full-Time Internship recuriting process.
 - All assignments are optional. You can choose some or all to do. Both effort and result will be used for final evaluation.
 - You can use either R or Python (Recommended) for coding.
 - Requirement:
-  - create your own priviate github repository for result delivery
-  - create readme for each assignment under individual folder
+  - create your own github repository for result delivery
+  - pdf summary report for each assignment is recommended
   - if you choose python, create jupyter notebook file
   - all code shall no bug runnable by simply cloning to local folder
-- Due: before November 23rd 5pm ET 
+- **Due: before November 23rd, 2020 5pm ET**
 
 ## Assignment 1: Power Calendar function
 #### Objective: write R/Python function giving number of hours by iso/peak.type/period
 In power market, the industry defines certain hour of each day to peak type for block trading, so we need to calculate correctly how many hours belongs to certain block. Each ISO has a little different definition of it. 
 - See reference: https://www.energygps.com/HomeTools/PowerCalendar
 
-#### Function: get.hours(iso, peak.type, period)
-#### Params: (all params are required in the function)
+#### Required Function: get.hours(iso, peak.type, period)
+###### Params: (all params are required in the function)
 -	iso (character): one of PJM/MISO/ERCOT/SPP/NYISO/WECC/CAISO (see item 1 below)
 -	peak.type (character): one of onpeak/offpeak/flat/2x16H/7x8
 -	period (character): has 4 types: “2018-2-3” as a daily, “2018Mar” as a monthly, “2018Q2” as a quarterly, “2018A” as an annually.
-#### Return:  a list variable giving iso/peak.type/start.date/end.date/num.hour where num.hour is the total number of hours of that peak type in that period.
+###### Return:  a list variable giving iso/peak.type/start.date/end.date/num.hour where num.hour is the total number of hours of that peak type in that period.
 ```R
 ##### Sample Run #####
 > num.hours.ercot.onpeak.may19 <- get.hours("ERCOT", "onpeak", "2019May")
@@ -46,25 +46,37 @@ $num.hour
 4.	Western market accepts all the assumptions from Eastern, moreover, it takes Saturday as a weekday.
 5.	MISO does not have the daylight-saving setting, the rest have. (Hint: daylight-savings will impact the function for certain month/peak.type.)
 
-
 ## Assignment 2: Meter Data formatting
 #### Objective: merge different data source into single dataset and evaluate the dataset for anormaly (if any)
 For analysis purpose, we always have different data sources to merge and format. It’s important to understand the data and format it correctly. 
-#### Source files:
--	USA_AL_Auburn-Opelika.AP.722284_TMY3_BASE.csv
-  -	This file gives hourly electricity consumptions for a resident with unit in kw (kilowatt). 
--	new.app4.csv
-  -	Assuming this is one appliance’s electricity consumption minute by minute which is not captured in the previous file. 
-  - The unit in the file is in watt.
-#### Request:
--	Create script to load both files.
+#### data files:
+-	**USA_AL_Auburn-Opelika.AP.722284_TMY3_BASE.csv**
+  This file gives hourly electricity consumptions for a resident with unit in kw (kilowatt). 
+-	**new.app4.csv**
+  Assuming this is one appliance’s electricity consumption minute by minute which is not captured in the previous file. 
+  The unit in the file is in watt.
+#### Requirements:
+-	**for R, use R dplyr package; for Python, use dfply package**
+- Create script to load both files. 
 -	Given the limitation of data period, try to find the overlap period and merge the data into hourly. (ignore the year but making sure the date/hour matched)
 -	After merging the source files correctly, please create one more column in the output file to give total hourly consumption of electricity. (sum all columns)
 -	try to plot the data and see if there’s any abnormal in the dataset and summarize any pattern observed from the data by hourl/weekday/month
 #### Hint:
--	for R, use R dplyr package; for Python, use dfply package
--	try to show smart/efficient way to merge and sum column
+- try to show smart/efficient way to merge and sum column
 -	try not to hard code by column number or name but making the script re-usable for general data formatting
 
+## Assignment 3: EDA and forecast model
+#### Objective: create EDA and forecast model to predict RTLMP
+In the data file (timeseries_data.xlsx), you can find following timeseries (hourly):
+-	RTLoad: ERCOT real-time hourly actual load
+-	WIND_RTI: ERCOT real-time hourly wind generation
+-	GENERATION_SOLAR_RT: ERCOT real-time solar generation
+-	RTLMP: ERCOT North hub real-time price
+#### Requirements:
+-	Create Exploratory Data Analysis (EDA)
+- Create forecast model 
+Hints:
+-	Plots/statistics by month/weekday/HE/peak_type
+-	Use package ggplot2
 
-## Assignment 3
+
