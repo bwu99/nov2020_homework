@@ -7,13 +7,13 @@ This is for Guzman Energy November 2020 Full-Time Internship recuriting process.
   - PDF summary report for each assignment is required.
   - if you choose python, create jupyter notebook file
   - all script shall be runnable by simply cloning to local folder
-- **Due: before November 23rd, 2020 5pm ET**
+- **Due: before November 24rd, 2020 5pm ET**
 - Hints:
   - make your code neat and self explanatory
   - in summary report, try to provide insights and conclusions
 
 ## Assignment 1: Power Calendar function
-#### Objective: write R/Python function giving number of hours by iso/peak.type/period
+#### Objective: write R/Python function which returns number of hours by iso/peak.type/period
 In power market, the industry defines certain hour of each day to peak type for block trading, so we need to calculate correctly how many hours belongs to certain block. Each ISO has a little different definition of it. 
 - See reference: https://www.energygps.com/HomeTools/PowerCalendar
 
