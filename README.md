@@ -1,8 +1,8 @@
 ## Introduction
 This is for Guzman Energy November 2020 Full-Time Internship recuriting process. 
 - **Assignment 1-3 are required**. Assignment 4 is optional.
-- You can use either R or Python (Recommended) for coding.
-- Requirement:
+- You can use either R or Python **(Recommended)** for coding.
+- Requirements:
   - create your own github repository for result delivery
   - PDF summary report for each assignment is required.
   - if you choose python, create jupyter notebook file
