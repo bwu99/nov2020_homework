@@ -8,6 +8,9 @@ This is for Guzman Energy November 2020 Full-Time Internship recuriting process.
   - if you choose python, create jupyter notebook file
   - all script shall be runnable by simply cloning to local folder
 - **Due: before November 23rd, 2020 5pm ET**
+- Hints:
+  - make your code neat and self explanatory
+  - in summary report, try to provide insights and conclusions
 
 ## Assignment 1: Power Calendar function
 #### Objective: write R/Python function giving number of hours by iso/peak.type/period
@@ -49,7 +52,7 @@ $num.hour
 ## Assignment 2: Meter Data formatting
 #### Objective: merge different data source into single dataset and evaluate the dataset for anormaly (if any)
 For analysis purpose, we always have different data sources to merge and format. It’s important to understand the data and format it correctly. 
-#### data files:
+#### Data Files:
 -	**USA_AL_Auburn-Opelika.AP.722284_TMY3_BASE.csv**
   This file gives hourly electricity consumptions for a resident with unit in kw (kilowatt). 
 -	**new.app4.csv**
@@ -75,8 +78,28 @@ In the data file **timeseries_data.xlsx**, you can find following timeseries (ho
 #### Requirements:
 -	Create Exploratory Data Analysis (EDA)
 - Create forecast model to predict RTLMP
-
 #### Hints:
 -	note the timestamps between independent and explanatory variables 
+
+## Assignment 4: Learn financial product of power Futures
+#### Objective: self-learning of market products and create hedging method
+This assignment will give some information to guide you to learn U.S. Power Futures market products. The goal is to demonstrate self-learning skill and passion to explore/learn new market/products.
+
+#### Products:
+- Product 1: Power Futures - ERN
+https://www.theice.com/products/6590337/ERCOT-North-345KV-Real-Time-Peak-Fixed-Price-Future
+- Product 2: Natural Gas Futures - H
+https://www.theice.com/products/6590258/Henry-LD1-Fixed-Price-Future
+- Product 3: Heat Rate Futures - XPR
+https://www.theice.com/products/27998706/ERCOT-North-345KV-Physical-HR-Peak-HE-0700-2200-Future
+
+#### Requirement:
+- create understanding of the products
+- assume Product 1 has no liquidation in the market and we are holding the physical power (same settlement as Product 1), how to use Product 2&3 to hedge our exposure to Product 1 type physical power? 
+  - creating an Excel file with weekly rebalance of your positions (only rebalance Product 2) to try to achieve hedging
+
+#### Hints:
+- best tool - Google
+- contract size limit
 
 
