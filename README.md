@@ -1,7 +1,7 @@
 ## Introduction
 This is for Guzman Energy November 2020 Full-Time Internship recuriting process. 
 - All assignments are optional. You can choose some or all to do. Both effort and result will be used for final evaluation.
-- You can use either R or Python for coding.
+- You can use either R or Python (Recommended) for coding.
 - Requirement:
   - create your own priviate github repository for result delivery
   - create readme for each assignment under individual folder
@@ -47,6 +47,24 @@ $num.hour
 5.	MISO does not have the daylight-saving setting, the rest have. (Hint: daylight-savings will impact the function for certain month/peak.type.)
 
 
-## Assignment 2
+## Assignment 2: Meter Data formatting
+#### Objective: merge different data source into single dataset and evaluate the dataset for anormaly (if any)
+For analysis purpose, we always have different data sources to merge and format. It’s important to understand the data and format it correctly. 
+#### Source files:
+-	USA_AL_Auburn-Opelika.AP.722284_TMY3_BASE.csv
+  -	This file gives hourly electricity consumptions for a resident with unit in kw (kilowatt). 
+-	new.app4.csv
+  -	Assuming this is one appliance’s electricity consumption minute by minute which is not captured in the previous file. 
+  - The unit in the file is in watt.
+#### Request:
+-	Create script to load both files.
+-	Given the limitation of data period, try to find the overlap period and merge the data into hourly. (ignore the year but making sure the date/hour matched)
+-	After merging the source files correctly, please create one more column in the output file to give total hourly consumption of electricity. (sum all columns)
+-	try to plot the data and see if there’s any abnormal in the dataset and summarize any pattern observed from the data by hourl/weekday/month
+#### Hint:
+-	for R, use R dplyr package; for Python, use dfply package
+-	try to show smart/efficient way to merge and sum column
+-	try not to hard code by column number or name but making the script re-usable for general data formatting
+
 
 ## Assignment 3
