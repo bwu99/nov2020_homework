@@ -1,12 +1,12 @@
 ## Introduction
 This is for Guzman Energy November 2020 Full-Time Internship recuriting process. 
-- All assignments are optional. You can choose some or all to do. Both effort and result will be used for final evaluation.
+- **Assignment 1-3 are required**. Assignment 4 is optional.
 - You can use either R or Python (Recommended) for coding.
 - Requirement:
   - create your own github repository for result delivery
-  - pdf summary report for each assignment is recommended
+  - PDF summary report for each assignment is required.
   - if you choose python, create jupyter notebook file
-  - all code shall no bug runnable by simply cloning to local folder
+  - all script shall be runnable by simply cloning to local folder
 - **Due: before November 23rd, 2020 5pm ET**
 
 ## Assignment 1: Power Calendar function
@@ -67,16 +67,16 @@ For analysis purpose, we always have different data sources to merge and format.
 
 ## Assignment 3: EDA and forecast model
 #### Objective: create EDA and forecast model to predict RTLMP
-In the data file (timeseries_data.xlsx), you can find following timeseries (hourly):
+In the data file **timeseries_data.xlsx**, you can find following timeseries (hourly):
 -	RTLoad: ERCOT real-time hourly actual load
 -	WIND_RTI: ERCOT real-time hourly wind generation
 -	GENERATION_SOLAR_RT: ERCOT real-time solar generation
 -	RTLMP: ERCOT North hub real-time price
 #### Requirements:
 -	Create Exploratory Data Analysis (EDA)
-- Create forecast model 
-Hints:
--	Plots/statistics by month/weekday/HE/peak_type
--	Use package ggplot2
+- Create forecast model to predict RTLMP
+
+#### Hints:
+-	note the timestamps between independent and explanatory variables 
 
 
