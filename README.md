@@ -45,7 +45,7 @@ $num.hour
 5.	MISO does not have the daylight-saving setting, the rest have. (Hint: daylight-savings will impact the function for certain month/peak.type.)
 
 ## Assignment 2: Meter Data formatting
-#### Objective: merge different data source into single dataset and evaluate the dataset for anormaly (if any)
+#### Objective: merge different data sources into single dataset and evaluate the dataset for anormaly (if any)
 For analysis purpose, we always have different data sources to merge and format. It’s important to understand the data and format it correctly. 
 #### Data Files:
 -	**USA_AL_Auburn-Opelika.AP.722284_TMY3_BASE.csv**
@@ -55,10 +55,10 @@ For analysis purpose, we always have different data sources to merge and format.
   The unit in the file is in watt.
 #### Requirements:
 -	**for R, use R dplyr package; for Python, use dfply package**
-- Create script to load both files. 
+- Create script to load both files and merge.
 -	Given the limitation of data period, try to find the overlap period and merge the data into hourly. (ignore the year but making sure the date/hour matched)
 -	After merging the source files correctly, please create one more column in the output file to give total hourly consumption of electricity. (sum all columns)
--	try to plot the data and see if there’s any abnormal in the dataset and summarize any pattern observed from the data by hourl/weekday/month
+-	Create plots of the data and see if there’s any abnormal in the dataset and summarize any pattern observed from the data by hourl/weekday/month
 #### Hint:
 - try to show smart/efficient way to merge and sum column
 -	try not to hard code by column number or name but making the script re-usable for general data formatting
@@ -73,8 +73,8 @@ In the data file **timeseries_data.xlsx**, you can find following timeseries (ho
 #### Requirements:
 -	Create Exploratory Data Analysis (EDA)
 - Create forecast model to predict RTLMP
-#### Hints:
--	note the timestamps between independent and explanatory variables 
+#### Hint:
+-	notice the timestamps between independent and explanatory variables 
 
 ## Assignment 4 (Optional): Learn financial product of power Futures
 #### Objective: self-learning of market products and create hedging method
@@ -88,12 +88,13 @@ https://www.theice.com/products/6590258/Henry-LD1-Fixed-Price-Future
 - Product 3: Heat Rate Futures - XPR
 https://www.theice.com/products/27998706/ERCOT-North-345KV-Physical-HR-Peak-HE-0700-2200-Future
 
-#### Requirement:
+#### Requirements:
 - create understanding of the products
-- assume Product 1 has no liquidation in the market and we are holding the physical power (same settlement as Product 1), how to use Product 2&3 to hedge our exposure to Product 1 type physical power? 
-  - creating an Excel file with weekly rebalance of your positions (only rebalance Product 2) to try to achieve hedging
+- assume Product 1 has no liquidation in the market and we are holding the physical power (same settlement as Product 1), how to use Product 2 & 3 to hedge our exposure to physical power (again, same settlement as Product 1)? 
+  - creating an Excel file with weekly rebalance of your positions (only rebalance Product 2) to try to achieve hedging. 
 
 #### Hint:
-- contract size limit
+- for the hedging, make your own assumptions and explain in summary report
+- notice contract size limit
 
 
