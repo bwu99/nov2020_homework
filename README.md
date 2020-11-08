@@ -94,8 +94,7 @@ https://www.theice.com/products/27998706/ERCOT-North-345KV-Physical-HR-Peak-HE-0
 - assume Product 1 has no liquidation in the market and we are holding the physical power (same settlement as Product 1), how to use Product 2&3 to hedge our exposure to Product 1 type physical power? 
   - creating an Excel file with weekly rebalance of your positions (only rebalance Product 2) to try to achieve hedging
 
-#### Hints:
-- best tool - Google
+#### Hint:
 - contract size limit
 
 
