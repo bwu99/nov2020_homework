@@ -81,7 +81,7 @@ In the data file **timeseries_data.xlsx**, you can find following timeseries (ho
 #### Hints:
 -	note the timestamps between independent and explanatory variables 
 
-## Assignment 4: Learn financial product of power Futures
+## Assignment 4 (Optional): Learn financial product of power Futures
 #### Objective: self-learning of market products and create hedging method
 This assignment will give some information to guide you to learn U.S. Power Futures market products. The goal is to demonstrate self-learning skill and passion to explore/learn new market/products.
 
