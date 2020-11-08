@@ -65,6 +65,8 @@ For analysis purpose, we always have different data sources to merge and format.
 
 ## Assignment 3: EDA and forecast model
 #### Objective: create EDA and forecast model to predict RTLMP
+We need to analyze and create predictive modeling in daily basis as quantitive analyst. Create EDA using the data and make your model to predict RTLMP from the data.
+#### Data Files:
 In the data file **timeseries_data.xlsx**, you can find following timeseries (hourly):
 -	RTLoad: ERCOT real-time hourly actual load
 -	WIND_RTI: ERCOT real-time hourly wind generation
@@ -79,7 +81,6 @@ In the data file **timeseries_data.xlsx**, you can find following timeseries (ho
 ## Assignment 4 (Optional): Learn financial product of power Futures
 #### Objective: self-learning of market products and create hedging method
 This assignment will give some information to guide you to learn U.S. Power Futures market products. The goal is to demonstrate self-learning skill and passion to explore/learn new market/products.
-
 #### Products:
 - Product 1: Power Futures - ERN
 https://www.theice.com/products/6590337/ERCOT-North-345KV-Real-Time-Peak-Fixed-Price-Future
@@ -87,14 +88,14 @@ https://www.theice.com/products/6590337/ERCOT-North-345KV-Real-Time-Peak-Fixed-P
 https://www.theice.com/products/6590258/Henry-LD1-Fixed-Price-Future
 - Product 3: Heat Rate Futures - XPR
 https://www.theice.com/products/27998706/ERCOT-North-345KV-Physical-HR-Peak-HE-0700-2200-Future
-
+#### Data Files:
+- **dataset.xlsx** for same strip (December 2016 product), the file provides the daily settlement prices of those products.
 #### Requirements:
-- create understanding of the products
+- create understanding of the products from the links provided. (do more research with uncleared concepts)
 - assume Product 1 has no liquidation in the market and we are holding the physical power (same settlement as Product 1), how to use Product 2 & 3 to hedge our exposure to physical power (again, same settlement as Product 1)? 
-  - creating an Excel file with weekly rebalance of your positions (only rebalance Product 2) to try to achieve hedging. 
-
+ - create Excel file model with weekly rebalance of your positions (only rebalance Product 2) to try to achieve hedging. within the Excel file, use parameter to decide your rebalance and summarize the efficiency of hedging.
 #### Hint:
-- for the hedging, make your own assumptions and explain in summary report
+- make your own assumptions and explain in summary report
 - notice contract size limit
 
 
