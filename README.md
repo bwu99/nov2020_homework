@@ -89,7 +89,7 @@ https://www.theice.com/products/6590258/Henry-LD1-Fixed-Price-Future
 - Product 3: Heat Rate Futures - XPR
 https://www.theice.com/products/27998706/ERCOT-North-345KV-Physical-HR-Peak-HE-0700-2200-Future
 #### Data Files:
-- **dataset.xlsx** for same strip (December 2016 product), the file provides the daily settlement prices of those products.
+- **dataset.xlsx**  the file provides the daily settlement prices of those products for same strip (December 2016 product).
 #### Requirements:
 - create understanding of the products from the links provided. (do more research with uncleared concepts)
 - assume Product 1 has no liquidation in the market and we are holding the physical power (same settlement as Product 1), how to use Product 2 & 3 to hedge our exposure to physical power (again, same settlement as Product 1)? 
