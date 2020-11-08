@@ -5,12 +5,11 @@ This is for Guzman Energy 2020-21 Winter Full-Time Quant Internship recuriting.
 - Requirements:
   - create your own github repository for result delivery
   - PDF summary report for each assignment is required.
-  - if you choose python, create jupyter notebook file
-  - all script shall be runnable by simply cloning to local folder
+  - for python, create jupyter notebook file
 - **Due: before November 24rd, 2020 5pm ET**
 - Hints:
   - make your code neat and self explanatory
-  - in summary report, try to provide insights and conclusions
+  - in summary report, provide your insights and conclusions
 
 ## Assignment 1: Power Calendar function
 #### Objective: write R/Python function which returns number of hours by iso/peak.type/period
