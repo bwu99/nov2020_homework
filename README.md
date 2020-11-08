@@ -1,5 +1,5 @@
 ## Introduction
-This is for Guzman Energy November 2020 Full-Time Internship recuriting process. 
+This is for Guzman Energy 2020-21 Winter Full-Time Quant Internship recuriting. 
 - **Assignment 1-3 are required**. Assignment 4 is optional.
 - You can use either R or Python **(Recommended)** for coding.
 - Requirements:
@@ -29,16 +29,12 @@ In power market, the industry defines certain hour of each day to peak type for 
 > num.hours.ercot.onpeak.may19
 $`iso`
 [1] "ERCOT"
-
 $peak.type
 [1] "onpeak"
-
 $start.date
 [1] "2019-05-01"
-
 $end.date
 [1] "2019-05-31"
-
 $num.hour
 [1] 352
 ```
