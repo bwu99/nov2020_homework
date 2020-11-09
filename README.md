@@ -1,5 +1,5 @@
 ## Introduction
-This is for Guzman Energy 2020-21 Winter Full-Time Quant Internship recuriting. 
+This is for Guzman Energy 2020-21 Winter Full-Time/Part-Time Quant Internship recuriting. 
 - **Assignment 1-3 are required**. Assignment 4 is optional.
 - You can use either R or Python **(Recommended)** for coding.
 - Requirements:
